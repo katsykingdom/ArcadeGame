@@ -1,3 +1,12 @@
+// Select character to play with
+window.onload = function on() {
+  document.getElementById("overlay").style.display = "block";
+};
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
 // Enemies our player must avoid
 const Enemy = function(x,y,speed) {
     // Variables applied to each of our instances go here,

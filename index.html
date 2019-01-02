@@ -2,12 +2,29 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
+    <title>Classic Arcade Game</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+    
 </head>
 <body>
+    <div id="overlay">
+        <div class="modal">
+            <h1>Arcade Game</h1>
+            <p> Reach the water without colliding into the evil bugs. <br>Use the arrow keys to move up, down right or left.<p>
+            <h4>Choose a character to play with:</h4>
+            <ul>
+                <li><img onClick="setAttribute('id', 'avatar'); off()" src="images/char-boy.png"/></li>
+                <li><img onClick="off()" src="images/char-cat-girl.png"/></li>
+                <li><img onClick="off()" src="images/char-horn-girl.png"/></li>
+                <li><img onClick="off()" src="images/char-pink-girl.png"/></li>
+                <li><img onClick="off()" src="images/char-princess-girl.png"/></li>
+            </ul>
+        </div>
+    </div>
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
+
 </body>
 </html>
